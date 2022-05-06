@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: 90vh;
+    max-width: 90vh;
     margin: 10vh auto;
 }
 
@@ -12,7 +12,7 @@
 
 .response{
     display: none;
-    width: 90vh;
+    max-width: 90vh;
     margin: 10vh auto;
 }
 #cabecalho{
@@ -29,8 +29,3 @@ table, td, tr{
     border-collapse: collapse;
 }
 
-@media (width < 300px){
-    body{
-        width: 90vh;
-    }
-}
