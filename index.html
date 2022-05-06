@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ViaCEPteste</title>
+</head>
+<body>
+    <div class="container container2">
+        <input type="number" placeholder="Digite seu CEP" id="CEP">  
+        <button type="submit" onclick="validateCep()" id="myBtn">Pesquisar</button>
+    </div>
+
+    <div class="container response">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2" id="cabecalho">
+                        RESULTADO
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="rua">
+                    <td>
+                        Rua:
+                    </td>
+                </tr>
+                <tr id="bairro">
+                    <td>
+                        Bairro:
+                    </td>
+                </tr>
+                <tr id="cidade">
+                    <td>
+                        Cidade:
+                    </td>
+                </tr>
+                <tr id="estado">
+                    <td>
+                        Estado:
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

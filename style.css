@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
+    margin: 10vh auto;
+}
+
+.container input, button{
+    padding: 5px;
+    margin: 1vh;
+}
+
+.response{
+    display: none;
+    width: 90vh;
+    margin: 10vh auto;
+}
+#cabecalho{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(97, 136, 136);
+}
+tbody{
+    background-color: rgb(103, 172, 172);
+}
+
+table, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+@media (width < 300px){
+    body{
+        width: 90vh;
+    }
+}
