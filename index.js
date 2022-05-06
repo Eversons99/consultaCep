@@ -2,7 +2,7 @@ async function validateCep(){
     const cep = document.getElementById('CEP').value
     console.log(`CEP ${cep.length} inserido `)
 
-    if(cep.length < 8 || cep.length > 8) return alert('O CEP precisa ter 8 digitos') 
+    if(cep.length < 8 || cep.length > 8) return alert('O CEP precisa ter 8 digitos e não conter traço (-)') 
 
     let getCep = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
     getCep = await getCep.json()
